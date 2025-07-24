@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>DPI Customer Services</title>
     <style>
         * {
@@ -18,31 +19,71 @@
                 width: 100%;
                 display: inline-block;
                 height: 100vh;
-                height: 100dvh; 
+                height: 100dvh;
+                position: relative;
             }
 
             .logo {
-                width: 30%;
+                width: 25%;
                 margin: auto;
+                margin-top: 10%;
             }
 
             img {
                 max-width: 100%;
             }
 
-            p {
+            p, i {
                 text-align: center;
                 color: white;
                 padding: 5px 0;
+                line-height: 1.8;
             }
 
             .name .title {
                 font-size: 1.2rem;
             }
 
-            .company {
+            .company, .contact, .contact-text {
                 margin-top: 20px;
             }
+
+            .contact {
+                display: flex;
+                justify-content: center;
+            }
+
+            .contact * {
+                margin: 0 10px;
+            }
+
+            i, .contact img {
+                font-size: 1.5rem;
+            }
+
+            .contact-text {
+                margin: 0 10px;
+                margin-top: 30%;
+            }
+
+            .contact-text p {
+                text-align: left;
+                font-size: 0.9rem;
+                color: #b6b5b1;
+            }
+            .footer {
+                width: 100%;
+                height: 15%;
+                position: absolute;
+                bottom: 0;
+                background-color: #191821;
+                font-size: 0.9rem;
+                font-style: italic;
+                color: #ecedb642;
+                text-align: center;
+                padding-top: 10px;
+            }
+
         }
     </style>
 </head>
@@ -63,7 +104,37 @@
             </div>
         </div>
         <div class="contact">
+            <!-- <i class="fa-solid fa-phone-volume"></i>
+            <i class="fa-regular fa-envelope"></i> 
+            <i class="fab fa-whatsapp"></i> -->
+            <a href="tel:0368568895" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-family: sans-serif; font-size: 16px;">
+                <img src="https://images.vexels.com/media/users/3/204667/isolated/preview/0be285c89368fd2d7b0499db071963ef-call-blue-icon.png" alt="Phone Icon" width="26" />
+            </a>
+            <a class="chat-btn btn-email" href="mailto:contact@dpi.asia">
+                <img src="https://www.svgrepo.com/show/381000/new-logo-gmail.svg" width="26" alt="Gmail Logo"/>
+            </a>
+            <a class="chat-btn btn-whatsapp" href="https://wa.me/84368568895" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="26" alt="WhatsApp Logo" />
+            </a>
+            <a href="https://line.me/ti/p/your-id" target="_blank">
+                <img src="https://cdn.simpleicons.org/line/00c300" alt="Line" width="26" />
+            </a>
+        </div>
+        <div class="contact-text">
+            <p> Company: Digital Photo Industries Viet Nam </p>
+            <p> Address: Anh Duong Station, Sun World Hon Thom Nature Park, An Thoi, Phu Quoc, Viet Nam </p>
+            <p> Phone number / WhatsApp / Zalo :  (+84) 368568895 - Mr. Luc </p>
+            <p> Email: contact@dpi.asia </p>
 
+        </div>
+
+        <div class="footer">
+            VIETNAM<br>
+            Digital Photo Industry Vietnam Ltd<br>
+            P1- 202, 2nd Floor, The Prince Residence Building.<br>
+            17-19-21 Nguyen Van Troi, P. 11<br>
+            Dist Phu Nhuan, Ho Chi Minh City.<br>
+            Vietnam
         </div>
     </div>
 
